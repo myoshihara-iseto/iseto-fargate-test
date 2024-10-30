@@ -1,0 +1,68 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:616749751767:task-definition/iseto-fagate-test-task:2",
+    "containerDefinitions": [
+        {
+            "name": "iseto-fargate-test",
+            "image": "616749751767.dkr.ecr.ap-northeast-1.amazonaws.com/fargate-test:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "iseto-fargate-test-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "systemControls": []
+        }
+    ],
+    "family": "iseto-fagate-test-task",
+    "taskRoleArn": "arn:aws:iam::616749751767:role/iseto-fargate-test-task-role",
+    "executionRoleArn": "arn:aws:iam::616749751767:role/iseto-fargate-test-task-excution-role",
+    "networkMode": "awsvpc",
+    "revision": 2,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2024-10-30T04:19:21.427Z",
+    "registeredBy": "arn:aws:iam::616749751767:user/myoshihara",
+    "enableFaultInjection": false,
+    "tags": []
+}
