@@ -63,6 +63,5 @@
     },
     "registeredAt": "2024-10-30T04:19:21.427Z",
     "registeredBy": "arn:aws:iam::616749751767:user/myoshihara",
-    "enableFaultInjection": false,
     "tags": []
 }
