@@ -1,6 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
+RUN apt install -y curl
 RUN apt-get -y install tzdata
 RUN apt-get -y install apache2
 RUN echo "I feel the need the need for speed!" > /var/www/html/index.html
