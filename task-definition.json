@@ -23,7 +23,7 @@
             "systemControls": []
         }
     ],
-    "family": "iseto-fagate-test-task",
+    "family": "iseto-fagate-test-task3",
     "taskRoleArn": "arn:aws:iam::616749751767:role/iseto-fargate-test-task-role",
     "executionRoleArn": "arn:aws:iam::616749751767:role/iseto-fargate-test-task-excution-role",
     "networkMode": "awsvpc",
