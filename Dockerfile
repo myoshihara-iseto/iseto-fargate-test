@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt install -y curl
 RUN apt-get -y install tzdata
 RUN apt-get -y install apache2
-RUN echo "Keep your friends close, but your enemies closer." > /var/www/html/index.html
+RUN echo "From Github." > /var/www/html/index.html
 RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf
 RUN a2enconf fqdn
 
